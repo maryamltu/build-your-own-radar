@@ -250,7 +250,7 @@ const Radar = function (size, radar) {
       // derive font-size from current blip width
       .style('font-size', ((blip.width * 10) / 22) + 'px')
       .attr('text-anchor', 'middle')
-      .text(blip.number())
+      .text(blip.name())
 
     var blipListItem = ringList.append('li')
     var blipText = blip.number() + '. ' + blip.name() + (blip.topic() ? ('. - ' + blip.topic()) : '')

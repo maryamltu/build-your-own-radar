@@ -155,5 +155,7 @@ After building it will start on `localhost:8080`
 - npm cache clean --force
 - rm -rf node_modules
 - npm install
+- npm update caniuse-lite browserslist
 - npm start
+
 ```
