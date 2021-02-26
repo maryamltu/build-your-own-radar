@@ -127,35 +127,3 @@ npm install && npm rebuild node-sass && npm run dev
 ```
 
 After building it will start on `localhost:8080`
-
-
-```
-```
-## Maryam added
-***Install Docker Part***
-
-- `docker build --force-rm --tag tec-radar/dev:1 .`
-
-- `docker create --name tec-radar_dev --publish 8080:8080 --mount  type=bind,source="C:\Users\marpah\Desktop\Maryam\LTU\ML-Dev\build-your-own-radar",target=/workspace tec-radar/dev:1`
-
-- `docker start tec-radar_dev`
-<br> ctrl+shift+p -->> attach to runningcontainer -->> tec-radar_dev
-<br> open /workspace folder
-
-
-***Install nodejs and npm***
-```
-- apt-get update
-- apt install curl
-- curl -sL https://deb.nodesource.com/setup_12.x | bash -
-- apt install nodejs
-- nodejs -v
-- npm -v
-
-- npm cache clean --force
-- rm -rf node_modules
-- npm install
-- npm update caniuse-lite browserslist
-- npm start
-
-```

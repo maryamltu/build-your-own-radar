@@ -20,12 +20,12 @@ describe('Blip', function () {
   })
 
   it('has a default number', function () {
-    expect(blip.number()).toEqual(-1)
+    expect(blip.person()).toEqual(-1)
   })
 
   it('sets the number', function () {
     blip.setNumber(1)
-    expect(blip.number()).toEqual(1)
+    expect(blip.person()).toEqual(1)
   })
 
   it('is new', function () {
