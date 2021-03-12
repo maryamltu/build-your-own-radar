@@ -7,7 +7,9 @@ const Blip = function (name, ring, isNew, topic, description, person) {
 
   self.width = IDEAL_BLIP_WIDTH
 
-  
+  self.person = function(){
+    return person;
+  }
 
   self.name = function () {
     return name
