@@ -5,7 +5,7 @@ const ExceptionMessages = require('../../src/util/exceptionMessages')
 describe('ContentValidator', function () {
   describe('verifyContent', function () {
     it('does not return anything if content is valid', function () {
-      var columnNames = ['name', 'ring', 'quadrant', 'isNew', 'description']
+      var columnNames = ['person', 'name', 'ring', 'quadrant', 'isNew', 'description']
       var contentValidator = new ContentValidator(columnNames)
 
       expect(contentValidator.verifyContent()).not.toBeDefined()
@@ -32,14 +32,14 @@ describe('ContentValidator', function () {
     })
 
     it('does not return anything if the all required headers are present', function () {
-      var columnNames = ['name', 'ring', 'quadrant', 'isNew', 'description']
+      var columnNames = ['person', 'name', 'ring', 'quadrant', 'isNew', 'description']
       var contentValidator = new ContentValidator(columnNames)
 
       expect(contentValidator.verifyHeaders()).not.toBeDefined()
     })
 
     it('does not care about white spaces in the headers', function () {
-      var columnNames = [' name', 'ring ', '   quadrant', 'isNew   ', '   description   ']
+      var columnNames = [' person', ' name', 'ring ', '   quadrant', 'isNew   ', '   description   ']
       var contentValidator = new ContentValidator(columnNames)
 
       expect(contentValidator.verifyHeaders()).not.toBeDefined()

@@ -238,7 +238,7 @@ const Radar = function (size, radar) {
     var group = quadrantGroup
     .append('g')
     .attr('class', 'blip-link')
-    .attr('id', 'blip-link-' + blip.person())
+    .attr('id', 'blip-link-' )
 
     if (blip.isNew()) {
       triangle(blip, x, y, order, group)
