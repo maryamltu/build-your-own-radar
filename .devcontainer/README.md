@@ -14,6 +14,6 @@ docker create --name tec-radar_dev --publish 8080:8080 --mount  type=bind,source
 # start/stop
 docker start tec-radar_dev
 docker stop tec-radar_dev
-
+```
 # remove container
 docker rm tec-radar_dev
